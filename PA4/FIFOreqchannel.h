@@ -53,7 +53,7 @@ public:
 	In reply, the function puts the read data in the buffer and  
 	returns an integer that tells how much data is read. If the read fails, it returns -1. */
 	
-	int cwrite(void* msgbuf , int msglen);
+	int cwrite(void *msgbuf , int msglen);
 	/* Writes msglen bytes from the msgbuf to the channel. The function returns the actual number of 
 	bytes written and that can be less than msglen (even 0) probably due to buffer limitation (e.g., the recepient
 	cannot accept msglen bytes due to its own buffer capacity. */
